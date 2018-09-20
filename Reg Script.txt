@@ -1,0 +1,8 @@
+CREATE TABLE temp_login_data 
+    (E_Id VARCHAR2(15),
+     Name VARCHAR2(40),
+      Username VARCHAR2(25),
+      Password VARCHAR2(20),
+      Email VARCHAR2(50),
+      Mob NUMBER,
+      Role VARCHAR2(20));
