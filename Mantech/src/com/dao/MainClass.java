@@ -12,6 +12,8 @@ public class MainClass {
 			System.out.println("wrong password");
 		}
 
+		System.out.println(obj.getRole("mike"));
+
 	}
 
 }
