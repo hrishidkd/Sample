@@ -1,0 +1,11 @@
+Complaint Id	:	101
+Complainee Name	:	mike
+Technician Name	:	jenny
+Department		:	HR
+Start Date		:	2018-09-21 14:14:34.0
+End Date		:	2018-09-21 14:14:34.0
+Priority		:	1
+Status			:	incomplete
+-----------------------------------------------------
+
+------------------------*End Of Report*-------------------------------

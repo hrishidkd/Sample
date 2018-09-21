@@ -22,13 +22,38 @@ public class Complaints {
 	Date endDate;
 	String priority;
 	String department;
+	String category;
+	String status;
 
 	public Complaints() {
 		// TODO Auto-generated constructor stub
 	}
 
+	public Complaints(String complianeeName, Date startDate, String priority, String department, String category,
+			String status) {
+		super();
+		this.complianeeName = complianeeName;
+		this.startDate = startDate;
+		this.priority = priority;
+		this.department = department;
+		this.category = category;
+		this.status = status;
+	}
+
+	public Complaints(String complianeeName, int technician_Eid, Date startDate, String priority, String department,
+			String category, String status) {
+		super();
+		this.complianeeName = complianeeName;
+		this.technician_Eid = technician_Eid;
+		this.startDate = startDate;
+		this.priority = priority;
+		this.department = department;
+		this.category = category;
+		this.status = status;
+	}
+
 	public Complaints(String complianeeName, String technicianName, int technician_Eid, Date startDate, Date endDate,
-			String priority, String department) {
+			String priority, String department, String category, String status) {
 		super();
 		this.complianeeName = complianeeName;
 		this.technicianName = technicianName;
@@ -37,6 +62,8 @@ public class Complaints {
 		this.endDate = endDate;
 		this.priority = priority;
 		this.department = department;
+		this.category = category;
+		this.status = status;
 	}
 
 	public int getId() {
@@ -103,11 +130,28 @@ public class Complaints {
 		this.department = department;
 	}
 
+	public String getCategory() {
+		return category;
+	}
+
+	public void setCategory(String category) {
+		this.category = category;
+	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
 	@Override
 	public String toString() {
 		return "Complaints [id=" + id + ", complianeeName=" + complianeeName + ", technicianName=" + technicianName
 				+ ", technician_Eid=" + technician_Eid + ", startDate=" + startDate + ", endDate=" + endDate
-				+ ", priority=" + priority + ", department=" + department + "]";
+				+ ", priority=" + priority + ", department=" + department + ", category=" + category + ", status="
+				+ status + "]";
 	}
 
 }

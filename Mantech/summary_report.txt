@@ -1,0 +1,8 @@
+Complaint Id	:	101
+Complainee Name	:	mike
+Technician Name	:	jenny
+Department		:	HR
+Status			:	incomplete
+-----------------------------------------------------
+
+-----------------------*End Of Report*--------------------------------
