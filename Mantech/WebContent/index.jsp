@@ -50,7 +50,7 @@
 						</div>
 
 						<div>
-							<a href="article.jsp" style="text-decoration: none" ><span class="icon fa-archive" aria-hidden="true"></span></a>
+							<a href="http://www.ijser.in/?msclkid=4eecb20d13211a82de74e9a569668bc4" style="text-decoration: none" ><span class="icon fa-archive" aria-hidden="true"></span></a>
 							<h3>Articles</h3>
 							<p>Read Articles</p>
 						</div>
@@ -58,7 +58,7 @@
 					</div>
 
 					<footer>
-						<a href="faq.jsp" class="button"><span class="icon fa-question" aria-hidden="true">HELPDESK FAQ</span></a>
+						<a href="Faq.html" class="button"><span class="icon fa-question" aria-hidden="true">HELPDESK FAQ</span></a>
 					</footer>
 				</div>
 			</section>

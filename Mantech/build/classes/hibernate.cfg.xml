@@ -17,6 +17,7 @@
 		<mapping class="com.table.Login" />
 		<mapping class="com.table.Employee" />
 		<mapping class="com.table.Complaints" />
+		<mapping class="com.table.Registration" />
 		
 
 

@@ -122,7 +122,7 @@
 											%>
 											<script>
 											alert("Invalid Credentials--Redirected To Home Page");
-											window.location = 'Index.jsp';
+											window.location = 'index.jsp';
 											</script>
 											<%
 										}

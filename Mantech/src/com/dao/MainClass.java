@@ -1,8 +1,13 @@
 package com.dao;
 
+import java.io.IOException;
+import java.util.Date;
+
+import com.table.Complaints;
+
 public class MainClass {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 
 		DaoOperations obj = new DaoOperations();
 
@@ -13,6 +18,11 @@ public class MainClass {
 		}
 
 		System.out.println(obj.getRole("mike"));
+
+//		Complaints o = new Complaints("mike", 101, new Date(), "1", "HR", "HARDWARE", "INCOMPLETE");
+//
+//		obj.generateDetailedReport();
+//		obj.generateSummaryReport();
 
 	}
 
