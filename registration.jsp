@@ -38,6 +38,28 @@
 <!-- Compiled and minified JavaScript -->
 <script
 	src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script type="text/javascript">
+	function Validate() {
+		var password = document.getElementById("t3").value;
+		var confirmPassword = document.getElementById("t4").value;
+		if (password != confirmPassword) {
+			alert("Passwords do not match.");
+			return false;
+		}
+		return true;
+	}
+</script>
+<script type="text/javascript">
+function vphone(){
+	var mphone=document.getElementById("t6").value;
+	var mlen=mphone.length();
+	if(mlen<10 && mlen>10){
+		alert("not a valid phone number");
+		return false;
+	}
+}
+</script>
 </head>
 <body>
 	<header id="header">
@@ -59,70 +81,65 @@
 
 
 				</div>
-				<div class="col-md-8">
 
-					<big><legend
-							style="color: white; text-align: left; text-decoration: none">CREDENTIALS</legend></big>
+				<form role="form" method="post" action="" form-align="centre" name="form1">
+					<div class="container center_div">
+						<big style="color: white; text-align: centre; font-size: 20px">CREDENTIALS</big>
+						<fieldset>
+							<legend style="color: white;">Register Here</legend>
+							<div class="form-group" style="color: white; text-align: left;">
+								<span class="glyphicon glyphicon-user" aria-hidden="true"
+									style="color: white; align: left"></span> <label for="t1"
+									style="color: white; text-align: left; font-size: 16px">Name</label>
+								<input type="text" class="form-control" id="t1" name="t1"
+									placeholder="Enter Name" style="color: white" required>
+							</div>
+							<div class="form-group" style="color: white; text-align: left;">
+								<span class="glyphicon glyphicon-user" aria-hidden="true"
+									style="color: white; align: left"></span> <label for="t2"
+									style="color: white; text-align: left; font-size: 16px">User
+									Name</label> <input type="text" class="form-control" id="t2" name="t2"
+									placeholder="Enter User Name" style="color: white" required>
+							</div>
+							<div class="form-group" style="color: white; text-align: left;">
+								<span class="glyphicon glyphicon-eye-open" aria-hidden="true"
+									style="color: white; text-align: left"></span> <label for="t3"
+									style="color: white; text-align: left; font-size: 16px">Password</label>
+								<input type="password" class="form-control" id="t3" name="t3"
+									pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+									title="Must contain at least one number, one uppercase and lowercase letter, at least 8 and at most 20 letters"
+									placeholder="Password" style="color: white" data-minlength="8"
+									data-maxlength="20" required>
 
-					<hr>
-					<form role="form" method="post" action="" form-align="centre">
-						<div class="container center_div">
-							<fieldset>
-								<legend style="color: white;">Register Here</legend>
-								<div class="form-group" style="color: white; text-align: left;">
-									<span class="glyphicon glyphicon-user" aria-hidden="true"
-										style="color: white; align: left"></span> <label for="t1"
-										style="color: white; text-align: left; font-size: 16px">Name</label>
-									<input type="text" class="form-control" id="t1" name="t1"
-										placeholder="Enter Name" style="color: white" required>
-								</div>
-								<div class="form-group" style="color: white; text-align: left;">
-									<span class="glyphicon glyphicon-user" aria-hidden="true"
-										style="color: white; align: left"></span> <label for="t2"
-										style="color: white; text-align: left; font-size: 16px">User
-										Name</label> <input type="text" class="form-control" id="t2" name="t2"
-										placeholder="Enter User Name" style="color: white" required>
-								</div>
 								<div class="form-group" style="color: white; text-align: left;">
 									<span class="glyphicon glyphicon-eye-open" aria-hidden="true"
-										style="color: white; text-align: left"></span> <label for="t3"
-										style="color: white; text-align: left; font-size: 16px">Password</label>
-									<input type="password" class="form-control" id="t3" name="t3"
-										pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-										title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
-										placeholder="Password" style="color: white" data-minlength="8"
+										style="color: white; text-align: left"></span> <label for="t4"
+										style="color: white; text-align: left; font-size: 16px">Confirm
+										Password</label> <input type="password" class="form-control" id="t4"
+										name="t4" placeholder="Confirm Password" style="color: white"
 										required>
-
-									<div class="form-group" style="color: white; text-align: left;">
-										<span class="glyphicon glyphicon-eye-open" aria-hidden="true"
-											style="color: white; text-align: left"></span> <label
-											for="t4"
-											style="color: white; text-align: left; font-size: 16px">Confirm
-											Password</label> <input type="password" class="form-control" id="t4"
-											name="t4" placeholder="Confirm Password" style="color: white"
-											required>
-									</div>
-									<div class="form-group" style="color: white; text-align: left;">
-										<span class="glyphicon glyphicon-envelope" aria-hidden="true"
-											style="color: white; align: left"></span> <label for="t5"
-											style="color: white; text-align: left; font-size: 16px">Email</label>
-										<input type="email" class="form-control" id="t5" name="t5"
-											placeholder="Enter Email" style="color: white" required>
-									</div>
-									<div class="form-group" style="color: white; text-align: left;">
-										<span class="glyphicon glyphicon-earphone" aria-hidden="true"
-											style="color: white; align: left"></span> <label for="t6"
-											style="color: white; text-align: left; font-size: 16px">Mobile
-											Number</label> <input type="text" class="form-control" id="t6"
-											name="t6" placeholder="Enter Mobile Number"
-											style="color: white" required>
-									</div>
-									<input type="submit" class="btn btn-primary"
-										value="Register Me" />
-							</fieldset>
-						</div>
-					</form>
-				</div>
+								</div>
+								<div class="form-group" style="color: white; text-align: left;">
+									<span class="glyphicon glyphicon-envelope" aria-hidden="true"
+										style="color: white; align: left"></span> <label for="t5"
+										style="color: white; text-align: left; font-size: 16px">Email</label>
+									<input type="email" class="form-control" id="t5" name="t5"
+										placeholder="Enter Email" style="color: white" required>
+								</div>
+								<div class="form-group" style="color: white; text-align: left;">
+									<span class="glyphicon glyphicon-earphone" aria-hidden="true"
+										style="color: white; align: left"></span> <label for="t6"
+										style="color: white; text-align: left; font-size: 16px">Mobile
+										Number</label> <input type="number" class="form-control" id="t6"
+										name="t6" placeholder="Enter Mobile Number"
+										style="color: white" minlength="10"
+									maxlength="10" title="please enter a valid phone no" required>
+								</div>
+								<input type="submit" class="btn btn-primary" value="Register Me"
+									onclick="Validate() vphone()" />
+						</fieldset>
+					</div>
+				</form>
 			</div>
 
 
